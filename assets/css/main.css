@@ -24,7 +24,6 @@ body {
 }
 
 .latest-posts {
-  border: solid red;
   text-align: center;
   margin: 0 auto;
 }
@@ -68,13 +67,11 @@ body {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navigation {
-    border: solid red;
     flex-direction: column;
     gap: 0.5rem;
   }
 
   #name {
-    border: solid red;
     font-size: 45px;
   }
 
@@ -91,13 +88,11 @@ body {
 
 @media (max-width: 489px) {
   .navigation {
-    border: solid green;
     flex-direction: column;
     padding-left: 45%;
     align-items: center;
   }
   #name {
-    border: solid green;
     font-size: 40px;
   }
 
@@ -110,11 +105,9 @@ body {
 @media (max-width: 355px) {
   /* to do : left the navigations  */
   .navigation a {
-    border: solid blue;
     flex-direction: column;
   }
   #name {
-    border: solid blue;
     font-size: 30px;
   }
 
