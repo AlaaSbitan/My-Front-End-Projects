@@ -103,7 +103,6 @@ body {
 }
 
 @media (max-width: 355px) {
-  /* to do : left the navigations  */
   .navigation a {
     flex-direction: column;
   }
