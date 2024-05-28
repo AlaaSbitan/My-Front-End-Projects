@@ -1,0 +1,140 @@
+/* main.css */
+@import url(header.css);
+@import url(footer.css);
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main Content Styles */
+.main-content {
+  border: solid yellow 5px;
+  flex: 1;
+  padding: 2rem 1rem;
+}
+
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
+.author-info .avatar {
+  border: solid;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.author-details h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.post-content {
+  margin-bottom: 2rem;
+}
+
+.post-footer {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.social-sharing {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-link {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+  background: #333;
+  color: #fff;
+}
+
+.social-link:hover {
+  opacity: 0.8;
+}
+
+#twitter {
+  border: solid red;
+  background-image: url("/Simple Blog Page/assets/imeges/Logo_of_Twitter.svg.png"); /* Replace with the path to your Twitter logo image */
+}
+
+.social-link.facebook {
+  background-image: url("path/to/facebook-logo.png"); /* Replace with the path to your Facebook logo image */
+}
+
+.social-link.linkedin {
+  background-image: url("path/to/linkedin-logo.png"); /* Replace with the path to your LinkedIn logo image */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .post-header {
+    border: solid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .author-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  #name {
+    font-size: 1.2rem;
+  }
+
+  .post {
+    max-width: 100%;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
