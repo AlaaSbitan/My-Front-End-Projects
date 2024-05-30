@@ -10,6 +10,14 @@ body {
   min-height: 100vh;
 }
 
+.header {
+  width: 100%;
+}
+
+.navigation {
+  gap: 0;
+}
+
 .main-content {
   flex: 1;
   padding: 2rem 1rem;
@@ -28,16 +36,17 @@ body {
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
-
 .author-card {
-  display: flex;
-  align-items: start;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
   padding: 1rem;
   margin-left: 1rem;
   background-color: #fff;
+  width: 100%;
 }
 
 .author-card:hover {
@@ -90,4 +99,23 @@ body {
 .social-link:hover {
   background: #333;
   color: #fff;
+}
+
+/*  */
+@media (max-width: 768px) {
+  .post-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+  .post {
+    max-width: 100%;
+  }
 }
