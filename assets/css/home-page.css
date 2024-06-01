@@ -31,7 +31,7 @@ body {
   justify-content: center;
 }
 
-.post {
+.post_card {
   background: #f4f4f4;
   padding: 1rem;
   border-radius: 8px;
@@ -41,7 +41,11 @@ body {
   flex: 1;
 }
 
-.post-image img {
+.post_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
